@@ -1,0 +1,32 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+
+.input-group-addon {
+    font-size: 1.1em;
+    font-weight: 500;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 0px;
+    border: 1px solid black;
+    cursor: pointer;
+    -webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    -moz-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    -ms-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    -o-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.input-group-addon:hover {
+    color: black;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.form-group-lg .input-group input {
+    border-radius: 0px;
+}

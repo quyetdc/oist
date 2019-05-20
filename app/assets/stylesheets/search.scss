@@ -1,0 +1,10 @@
+#form_search {
+  position: relative;
+  z-index: 999;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  margin-top: 300px;
+  #search {
+    box-shadow: none!important;
+  }
+}

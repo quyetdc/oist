@@ -1,0 +1,243 @@
+<div class="fs_sharing_wrapper hided">
+  <div class="fs_sharing">
+    <a href="http://www.facebook.com/share.php?u=http://www.gt3themes.com/website-templates/oyster/" class="share_facebook" target="_blank"><i class="icon-facebook-square"></i></a>
+    <a href="http://pinterest.com/pin/create/button/?url=http://www.gt3themes.com/website-templates/oyster/&media=http://www.gt3themes.com/website-templates/oyster/img/logo.png" class="share_pinterest" target="_blank">
+      <i class="icon-pinterest"></i></a>
+    <a href="https://twitter.com/intent/tweet?text=Fullscreen Slider&amp;url=http://www.gt3themes.com/website-templates/oyster/" class="share_tweet" target="_blank"><i class="icon-twitter"></i></a>
+    <a href="https://plus.google.com/share?url=http://www.gt3themes.com/website-templates/oyster/" class="share_gplus" target="_blank"><i class="icon-google-plus-square"></i></a>
+    <a class="fs_share_close hided" href="javascript:void(0)"></a>
+  </div>
+</div>
+<div class="content_bg"></div>
+
+<div class="col-md-6 col-md-offset-3">
+    <div id="form_search">
+      <%= render "shared/search" %>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        (function() {
+            "use strict";
+            if (window.location && window.location.hash) {
+                if (window.location.hash === '#_=_') {
+                    window.location.hash = '';
+                    history.pushState('', document.title, window.location.pathname); // nice and clean
+                }
+            }
+        }());
+    });
+
+    gallery_set = [
+        {
+            image: "<%= image_url "slider/1.jpg" %>",
+            thmb: '<%= image_url "slider/thumbs/1.jpg" %>',
+            alt: "",
+            title: "",
+            description: "Discover elegant solution for your online portfolio",
+            titleColor: "#ffffff",
+            descriptionColor: "#ffffff"
+        },
+        {
+            image: "<%= image_url "slider/2.jpg" %>",
+            thmb: '<%= image_url "slider/thumbs/2.jpg" %>',
+            alt: "",
+            title: "",
+            description: "Discover elegant solution for your online portfolio",
+            titleColor: "#ffffff",
+            descriptionColor: "#ffffff"
+        },
+        {
+            image: '<%= image_url "slider/3.jpg" %>',
+            thmb: '<%= image_url "slider/thumbs/3.jpg" %>',
+            alt: "",
+            title: "",
+            description: "Discover elegant solution for your online portfolio",
+            titleColor: "#ffffff",
+            descriptionColor: "#ffffff"
+        },
+        {
+            image: '<%= image_url "slider/4.jpg" %>',
+            thmb: '<%= image_url "slider/thumbs/4.jpg" %>',
+            alt: "",
+            title: "",
+            description: "Discover elegant solution for your online portfolio",
+            titleColor: "#ffffff",
+            descriptionColor: "#ffffff"
+        },
+        {
+            image: '<%= image_url "slider/5.jpg" %>',
+            thmb: '<%= image_url "slider/thumbs/5.jpg" %>',
+            alt: "",
+            title: "",
+            description: "Discover elegant solution for your online portfolio",
+            titleColor: "#ffffff",
+            descriptionColor: "#ffffff"
+        },
+//        {
+//            image: '<%= image_url "slider/6.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/6.jpg" %>',
+//            alt: "Summer",
+//            title: "Summer",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/7.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/7.jpg" %>',
+//            alt: "Skate",
+//            title: "Skate",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/8.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/8.jpg" %>',
+//            alt: "Forest",
+//            title: "Forest",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/9.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/9.jpg" %>',
+//            alt: "Mountains",
+//            title: "Mountains",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/10.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/10.jpg" %>',
+//            alt: "Seashore",
+//            title: "Seashore",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/11.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/11.jpg" %>',
+//            alt: "Pier",
+//            title: "Pier",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/12.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/12.jpg" %>',
+//            alt: "Desert",
+//            title: "Desert",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/13.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/13.jpg" %>',
+//            alt: "Mountains",
+//            title: "Mountains",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/14.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/14.jpg" %>',
+//            alt: "Tourist",
+//            title: "Tourist",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/15.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/15.jpg" %>',
+//            alt: "Fog",
+//            title: "Fog",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/16.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/16.jpg" %>',
+//            alt: "Desert",
+//            title: "Desert",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/17.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/17.jpg" %>',
+//            alt: "Seashore",
+//            title: "Seashore",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        },
+//        {
+//            image: '<%= image_url "slider/18.jpg" %>',
+//            thmb: '<%= image_url "slider/thumbs/18.jpg" %>',
+//            alt: "Stones",
+//            title: "Stones",
+//            description: "Discover elegant solution for your online portfolio",
+//            titleColor: "#ffffff",
+//            descriptionColor: "#ffffff"
+//        }
+    ]
+
+    jQuery(document).ready(function () {
+        "use strict";
+        jQuery('html').addClass('hasPag');
+        jQuery('body').fs_gallery({
+            fx: 'fade', /*fade, zoom, slide_left, slide_right, slide_top, slide_bottom*/
+            fit: 'no_fit',
+            slide_time: 3300, /*This time must be < then time in css*/
+            autoplay: 1,
+            show_controls: 1,
+            slides: gallery_set
+        });
+        jQuery('.fs_share').click(function () {
+            jQuery('.fs_fadder').removeClass('hided');
+            jQuery('.fs_sharing_wrapper').removeClass('hided');
+            jQuery('.fs_share_close').removeClass('hided');
+        });
+        jQuery('.fs_share_close').click(function () {
+            jQuery('.fs_fadder').addClass('hided');
+            jQuery('.fs_sharing_wrapper').addClass('hided');
+            jQuery('.fs_share_close').addClass('hided');
+        });
+        jQuery('.fs_fadder').click(function () {
+            jQuery('.fs_fadder').addClass('hided');
+            jQuery('.fs_sharing_wrapper').addClass('hided');
+            jQuery('.fs_share_close').addClass('hided');
+        });
+
+        jQuery('.close_controls').click(function () {
+            if (jQuery(this).hasClass('open_controls')) {
+                jQuery('.fs_controls').removeClass('hide_me');
+                jQuery('.fs_title_wrapper ').removeClass('hide_me');
+                jQuery('.fs_thmb_viewport').removeClass('hide_me');
+                jQuery('header.main_header').removeClass('hide_me');
+                jQuery(this).removeClass('open_controls');
+            } else {
+                jQuery('header.main_header').addClass('hide_me');
+                jQuery('.fs_controls').addClass('hide_me');
+                jQuery('.fs_title_wrapper ').addClass('hide_me');
+                jQuery('.fs_thmb_viewport').addClass('hide_me');
+                jQuery(this).addClass('open_controls');
+            }
+        });
+
+        jQuery('.main_header').removeClass('hided');
+        jQuery('html').addClass('without_border');
+    });
+</script>

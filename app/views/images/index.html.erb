@@ -1,0 +1,51 @@
+<body style="margin-top: 80px !important; opacity: 1;">
+
+    <div class="fullscreen-gallery hided pb0 pl0">
+      <div class="fs_grid_gallery is_masonry">
+        <% @imgs_unsplash.each do |img| %>
+            <div class="grid-gallery-item pr0 pt0">
+              <a href="<%= img.urls["full"] %>" class="prettyPhoto" data-rel="prettyPhoto[gallery99]" title="">
+                <%= image_tag img.urls["small"], alt: "", class: "fw_featured_image", width: "540" %>
+                <span class="gallery_fadder"></span>
+                <span class="gallery_ico"><i class="stand_icon icon-eye"></i></span>
+              </a>
+            </div>
+        <% end %>
+
+        <% @imgs_flickr.each do |img| %>
+            <div class="grid-gallery-item pr0 pt0">
+              <a href="<%= img[:url] %>" class="prettyPhoto" data-rel="prettyPhoto[gallery99]" title="">
+                <%= image_tag img[:url], alt: "", class: "fw_featured_image", width: "540" %>
+                <span class="gallery_fadder"></span>
+                <span class="gallery_ico"><i class="stand_icon icon-eye"></i></span>
+              </a>
+            </div>
+        <% end %>
+      </div>
+    </div>
+
+    <!--<div class="preloader"></div>-->
+
+    <div class="content_bg"></div>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            "use strict";
+            jQuery('.is_masonry').masonry();
+            jQuery('html').addClass('without_border');
+            jQuery('.is_masonry').masonry();
+            setTimeout("jQuery('.is_masonry').masonry()",500);
+            setTimeout("jQuery('.is_masonry').masonry()",1000);
+        });
+        jQuery(window).load(function () {
+            "use strict";
+            setTimeout("jQuery('.is_masonry').masonry()",500);
+            setTimeout("jQuery('.is_masonry').masonry()",1000);
+        });
+        jQuery(window).resize(function () {
+            "use strict";
+            setTimeout("jQuery('.is_masonry').masonry()",500);
+            setTimeout("jQuery('.is_masonry').masonry()",1000);
+        });
+    </script>
+</body>

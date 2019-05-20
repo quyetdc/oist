@@ -1,0 +1,70 @@
+<header class="main_header">
+  <div class="header_wrapper">
+    <div class="logo_sect">
+      <%= link_to root_path, data: { no_turbolink: true }, class: 'logo' do %>
+        <span class="logo_def" style="color: #1a1a1a; font-size: 20px; line-height: 1">O<span style="color: darkturquoise; font-weight: bold">I</span>ST.</span>
+          <!-- online image search tool -->
+      <% end %>
+
+      <!--<div class="slogan">html photo template</div>-->
+    </div>
+    <div class="header_rp">
+      <nav>
+        <div class="menu-main-menu-container">
+          <ul id="menu-main-menu" class="menu">
+            <li class="current-menu-parent menu-item-has-children">
+              <%= link_to "Home", root_path, data: { no_turbolink: true } %>
+              <!--<ul class="sub-menu">-->
+                <!--<li class="current-menu-item"><a href="index.html"><span>Slider</span></a></li>-->
+              <!--</ul>-->
+            </li>
+
+            <li class="menu-item-has-children">
+              <%= link_to "Contact", root_path, data: { no_turbolink: true } %>
+
+              <!--<ul class="sub-menu">-->
+                <!--<li><a href="contacts_fullscreen.html"><span>Fullscreen</span></a></li>-->
+                <!--<li><a href="contact_with_sidebar.html"><span>With Sidebar</span></a></li>-->
+                <!--<li><a href="contact_fullwidth.html"><span>Fullwidth</span></a></li>-->
+              <!--</ul>-->
+            </li>
+
+            <% if user_signed_in? %>
+                <li class="menu-item-has-children">
+                  <%= link_to current_user.name, root_path, data: { no_turbolink: true } %>
+
+                  <ul class="sub-menu">
+                    <li>
+                      <%= link_to "Sign Out",
+                                  destroy_user_session_path,
+                                  method: :delete,
+                                  data: { no_turbolink: true }, style: 'color: #a94442 !important' %>
+                    </li>
+                  </ul>
+                </li>
+            <% else %>
+                <li class="menu-item-has-children">
+                  <%= link_to "Sign In",
+                              user_facebook_omniauth_authorize_path,
+                              data: { no_turbolink: true } %>
+                  <ul class="sub-menu">
+                    <li>
+                      <%= link_to "Facebook",
+                                  user_facebook_omniauth_authorize_path,
+                                  data: { no_turbolink: true } %>
+                    </li>
+                    <li>
+                      <%= link_to "Sign In", user_session_path %>
+                    </li>
+                  </ul>
+                </li>
+            <% end %>
+          </ul>
+        </div>
+
+      </nav>
+      <!--<a class="search_toggler" href="#"></a>-->
+    </div>
+    <div class="clear"></div>
+  </div>
+</header>
